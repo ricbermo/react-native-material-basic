@@ -1,0 +1,10 @@
+{
+  "name": "react-native-material-basic",
+  "version": "0.0.1",
+  "description": "A Simple set of React Native components following Material Design",
+  "main": "index.js",
+  "repository": "https://github.com/ricbermo/react-native-material-basic",
+  "author": "Ricardo Berdejo",
+  "license": "MIT",
+  "private": false
+}
