@@ -6,5 +6,12 @@
   "repository": "https://github.com/ricbermo/react-native-material-basic",
   "author": "Ricardo Berdejo",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^2.0.0",
+    "eslint": "^7.6.0",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-native": "^0.63.2"
+  }
 }
