@@ -40,7 +40,7 @@ export default class RaisedTextButton extends PureComponent {
       if (typeof icon === 'function') {
         return icon();
       }
-      return icon;
+      return React.cloneElement(icon, {style: styles.iconLeft});
     }
     return null;
   };
@@ -51,7 +51,7 @@ export default class RaisedTextButton extends PureComponent {
       if (typeof icon === 'function') {
         return icon();
       }
-      return icon;
+      return React.cloneElement(icon, {style: styles.iconRight});
     }
     return null;
   };

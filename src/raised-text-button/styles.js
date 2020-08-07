@@ -16,6 +16,12 @@ const styles = StyleSheet.create({
       },
     }),
   },
+  iconLeft: {
+    transform: [{translateX: -8}],
+  },
+  iconRight: {
+    transform: [{translateX: 8}],
+  },
 });
 
 export {styles};
