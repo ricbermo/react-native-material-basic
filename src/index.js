@@ -7,6 +7,7 @@ import OutlinedButton from './outlined-button';
 import TextField from './textfield/field';
 import FilledTextField from './textfield/field-filled';
 import OutlinedTextField from './textfield/field-outlined';
+import Select from './select';
 
 export {
   Ripple,
@@ -18,4 +19,5 @@ export {
   TextField,
   FilledTextField,
   OutlinedTextField,
+  Select,
 };
