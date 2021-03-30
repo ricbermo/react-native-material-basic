@@ -93,9 +93,9 @@ export default class Select extends PureComponent {
     rippleCentered: false,
     rippleSequential: true,
     rippleInsets: {
-      top: 16,
+      top: 0,
       right: 0,
-      bottom: -8,
+      bottom: -17,
       left: 0,
     },
     rippleOpacity: 0.54,
@@ -234,7 +234,7 @@ export default class Select extends PureComponent {
 
     const dimensions = Dimensions.get('window');
 
-    this.container.measureInWindow((x, y, containerWidth, containerHeight) => {
+    this.container.measureInWindow((x, y, containerWidth, _containerHeight) => {
       const {opacity} = this.state;
 
       /* Adjust coordinates for relative layout in RTL locale */
@@ -388,8 +388,12 @@ export default class Select extends PureComponent {
   }
 
   rippleInsets() {
-    const {top = 16, right = 0, bottom = -8, left = 0} =
-      this.props.rippleInsets || {};
+    const {
+      top = 0,
+      right = 0,
+      bottom = -17,
+      left = 0,
+    } = this.props.rippleInsets;
     return {top, right, bottom, left};
   }
 
@@ -645,7 +649,7 @@ export default class Select extends PureComponent {
     if (!dropdownPosition) {
       switch (selected) {
         case -1:
-          translateY -= 1 === itemCount ? 0 : itemSize;
+          translateY -= itemCount === 1 ? 0 : itemSize;
           break;
 
         case 0:

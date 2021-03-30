@@ -68,17 +68,3 @@ Other [Ripple][ripple] properties will also work
  disabledTitleColor | Button title color for disabled state |   String | rgba(0, 0, 0, .26)
  titleStyle         | Button title style                    |   Object | -
 
-## Example
-
-```bash
-git clone https://github.com/n4kz/react-native-material-buttons
-cd react-native-material-buttons/example
-npm install
-npm run ios # or npm run android
-```
-
-## Copyright and License
-
-BSD License
-
-Copyright 2017-2019 Alexander Nazarov. All rights reserved.

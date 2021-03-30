@@ -67,7 +67,7 @@ class Example extends Component {
  pickerStyle       | Styles for item picker view                   |   Object | -
  shadeOpacity      | Shade opacity for dropdown items              |   Number | 0.12
  rippleOpacity     | Opacity for ripple effect                     |   Number | 0.54
- rippleInsets      | Insets for ripple on base component           |   Object | { top: 16, bottom: -8 }
+ rippleInsets      | Insets for ripple on base component           |   Object | { top: 0, bottom: -17 }
  rippleCentered    | Ripple on base component should be centered   |  Boolean | false
  renderBase        | Render base component                         | Function | -
  renderAccessory   | Render text field accessory                   | Function | -

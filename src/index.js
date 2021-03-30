@@ -8,6 +8,9 @@ import TextField from './textfield/field';
 import FilledTextField from './textfield/field-filled';
 import OutlinedTextField from './textfield/field-outlined';
 import Select from './select';
+import MaterialDialog from './dialogs/MaterialDialog';
+import SinglePickerMaterialDialog from './dialogs/SinglePickerMaterialDialog';
+import MultiPickerMaterialDialog from './dialogs/MultiPickerMaterialDialog';
 
 export {
   Ripple,
@@ -20,4 +23,7 @@ export {
   FilledTextField,
   OutlinedTextField,
   Select,
+  MaterialDialog,
+  SinglePickerMaterialDialog,
+  MultiPickerMaterialDialog,
 };

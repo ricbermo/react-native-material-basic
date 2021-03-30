@@ -1,12 +1,18 @@
-import Ripple from './src/ripple';
-import Button from './src/button';
-import TextButton from './src/text-button';
-import RaisedButton from './src/raised-button';
-import RaisedTextButton from './src/raised-text-button';
-import Select from './src/select';
-import TextField from './src/textfield/field';
-import FilledTextField from './src/textfield/field-filled';
-import OutlinedTextField from './src/textfield/field-outlined';
+import {
+  Ripple,
+  Button,
+  TextButton,
+  RaisedButton,
+  RaisedTextButton,
+  OutlinedButton,
+  TextField,
+  FilledTextField,
+  OutlinedTextField,
+  Select,
+  MaterialDialog,
+  SinglePickerMaterialDialog,
+  MultiPickerMaterialDialog,
+} from './src';
 
 export {
   Ripple,
@@ -14,8 +20,12 @@ export {
   TextButton,
   RaisedButton,
   RaisedTextButton,
-  Select,
+  OutlinedButton,
   TextField,
   FilledTextField,
   OutlinedTextField,
+  Select,
+  MaterialDialog,
+  SinglePickerMaterialDialog,
+  MultiPickerMaterialDialog,
 };
