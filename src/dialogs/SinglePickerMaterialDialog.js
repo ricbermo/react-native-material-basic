@@ -120,6 +120,7 @@ SinglePickerMaterialDialog.propTypes = {
   cancelLabel: PropTypes.string,
   okLabel: PropTypes.string,
   scrolled: PropTypes.bool,
+  itemColor: PropTypes.string,
 };
 
 SinglePickerMaterialDialog.defaultProps = {
@@ -130,4 +131,5 @@ SinglePickerMaterialDialog.defaultProps = {
   cancelLabel: undefined,
   okLabel: undefined,
   scrolled: false,
+  itemColor: 'black',
 };
