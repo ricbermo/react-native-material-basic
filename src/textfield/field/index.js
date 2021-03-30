@@ -266,11 +266,10 @@ export default class TextField extends PureComponent {
     const {defaultValue} = this.props;
     const value = this.isDefaultVisible() ? defaultValue : text;
 
-    if (value === null) {
-      return '';
+    if (value) {
+      return typeof value === 'string' ? value : String(value);
     }
-
-    return typeof value === 'string' ? value : String(value);
+    return '';
   }
 
   setValue(text) {
