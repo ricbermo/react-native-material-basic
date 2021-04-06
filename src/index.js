@@ -11,6 +11,7 @@ import Select from './select';
 import MaterialDialog from './dialogs/MaterialDialog';
 import SinglePickerMaterialDialog from './dialogs/SinglePickerMaterialDialog';
 import MultiPickerMaterialDialog from './dialogs/MultiPickerMaterialDialog';
+import Card from './cards/';
 
 export {
   Ripple,
@@ -26,4 +27,5 @@ export {
   MaterialDialog,
   SinglePickerMaterialDialog,
   MultiPickerMaterialDialog,
+  Card,
 };

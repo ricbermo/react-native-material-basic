@@ -12,6 +12,7 @@ import {
   MaterialDialog,
   SinglePickerMaterialDialog,
   MultiPickerMaterialDialog,
+  Card,
 } from './src';
 
 export {
@@ -28,4 +29,5 @@ export {
   MaterialDialog,
   SinglePickerMaterialDialog,
   MultiPickerMaterialDialog,
+  Card,
 };
