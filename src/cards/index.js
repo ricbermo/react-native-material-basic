@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, StyleSheet, Platform} from 'react-native';
-import PropTypes from 'prop-types';
 import Ripple from '../ripple';
 
 const Card = React.memo(function Card({useRipple, children, style, onPress}) {
@@ -14,7 +13,7 @@ const Card = React.memo(function Card({useRipple, children, style, onPress}) {
 
 const styles = StyleSheet.create({
   content: {
-    backgroundColor: colors.white,
+    backgroundColor: 'white',
     borderRadius: 6,
   },
   shadow: {
@@ -33,16 +32,5 @@ const styles = StyleSheet.create({
     }),
   },
 });
-
-Card.propTypes = {
-  children: PropTypes.any.isRequired,
-  useRipple: PropTypes.bool,
-  onPress: PropTypes.func,
-  style: PropTypes.style,
-};
-
-Card.defaultProps = {
-  useRipple: false,
-};
 
 export default Card;
