@@ -124,14 +124,10 @@ export default class TextField extends PureComponent {
     y1: 0,
   };
 
-  static getDerivedStateFromProps({error, value}, state) {
+  static getDerivedStateFromProps({error}, state) {
     /* Keep last received error in state */
     if (error && error !== state.error) {
       return {error};
-    }
-
-    if (value !== state.text) {
-      return {text: value};
     }
 
     return null;
@@ -155,13 +151,13 @@ export default class TextField extends PureComponent {
     this.mounted = false;
     this.focused = false;
 
-    const {value: text, error, fontSize} = this.props;
+    const {value, error, fontSize, defaultValue} = this.props;
 
     const labelState = labelStateFromProps(this.props, {text}) ? 1 : 0;
     const focusState = errorStateFromProps(this.props) ? -1 : 0;
 
     this.state = {
-      text,
+      text: value || defaultValue,
       error,
       focusAnimation: new Animated.Value(focusState),
       labelAnimation: new Animated.Value(labelState),
