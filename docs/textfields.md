@@ -22,39 +22,32 @@ Material texfield with consistent behaviour on iOS and Android
 ## Usage
 
 ```javascript
-import React, { Component } from 'react';
-import {
-  TextField,
-  FilledTextField,
-  OutlinedTextField,
-} from 'react-native-material-basic';
+import React from 'react';
+import {FilledTextField} from 'react-native-material-basic';
 
-class Example extends Component {
-  fieldRef = React.createRef();
+// your custom Input
+const Input = React.forwardRef((props, ref) => (
+  <FilledTextField
+    ref={ref}
+    inputContainerStyle={styles.container}
+    tintColor={colors.primary}
+    textColor={colors.textDark2nd}
+    baseColor={colors.textDark2nd}
+    labelTextStyle={theme.fontFamily}
+    titleTextStyle={theme.fontFamily}
+    style={theme.fontFamily}
+    {...props}
+  />
+));
 
-  onSubmit = () => {
-    // you can also just use the `value` prop.
-    let { current: field } = this.fieldRef;
+and then
 
-    console.log(field.value());
-  };
-
-  formatText = (text) => {
-    return text.replace(/[^+\d]/g, '');
-  };
-
-  render() {
-    return (
-      <OutlinedTextField
-        label='Phone number'
-        keyboardType='phone-pad'
-        formatText={this.formatText}
-        onSubmitEditing={this.onSubmit}
-        ref={this.fieldRef}
-      />
-    );
-  }
-}
+const emailRef = useRef();
+<Input
+  ref={emailRef}
+  label="Email"
+  defaultValue={'your default value'}
+/>
 ```
 
 ## Properties

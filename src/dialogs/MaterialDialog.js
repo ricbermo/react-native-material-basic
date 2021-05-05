@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
 MaterialDialog.propTypes = {
   visible: PropTypes.bool.isRequired,
   children: PropTypes.element.isRequired,
-  onCancel: PropTypes.func.isRequired,
+  onCancel: PropTypes.func,
   onOk: PropTypes.func,
   cancelLabel: PropTypes.string,
   okLabel: PropTypes.string,

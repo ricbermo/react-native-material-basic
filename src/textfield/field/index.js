@@ -151,13 +151,13 @@ export default class TextField extends PureComponent {
     this.mounted = false;
     this.focused = false;
 
-    const {value, error, fontSize, defaultValue} = this.props;
+    const {value: text, error, fontSize, defaultValue} = this.props;
 
     const labelState = labelStateFromProps(this.props, {text}) ? 1 : 0;
     const focusState = errorStateFromProps(this.props) ? -1 : 0;
 
     this.state = {
-      text: value || defaultValue,
+      text: text || defaultValue,
       error,
       focusAnimation: new Animated.Value(focusState),
       labelAnimation: new Animated.Value(labelState),
