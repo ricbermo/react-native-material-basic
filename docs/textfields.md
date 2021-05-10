@@ -91,6 +91,8 @@ const emailRef = useRef();
 
 Other [TextInput][rn-textinput] properties will also work.
 
+Note: when passing `multiline={true}` add a `height` value for better UX
+
 ### Content Inset
 
  name  | description                       | Normal | Filled | Outlined

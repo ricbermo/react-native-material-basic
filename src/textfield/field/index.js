@@ -453,12 +453,10 @@ export default class TextField extends PureComponent {
     };
 
     if (multiline) {
-      const lineHeight = fontSize * 1.5;
       const offset = Platform.OS === 'ios' ? 2 : 0;
-      style.height += lineHeight;
       style.transform = [
         {
-          translateY: lineHeight + offset,
+          translateY: offset,
         },
       ];
     }
