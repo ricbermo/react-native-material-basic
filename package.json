@@ -1,6 +1,6 @@
 {
   "name": "react-native-material-basic",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "A Simple set of React Native components following Material Design",
   "main": "index.js",
   "repository": "https://github.com/ricbermo/react-native-material-basic",
