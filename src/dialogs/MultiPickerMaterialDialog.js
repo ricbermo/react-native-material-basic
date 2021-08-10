@@ -72,6 +72,7 @@ export default class MultiPickerMaterialDialog extends Component {
           extraData={this.state}
           renderItem={this.renderItem}
           keyExtractor={this.keyExtractor}
+          {...this.props.listProps}
         />
       </MaterialDialog>
     );

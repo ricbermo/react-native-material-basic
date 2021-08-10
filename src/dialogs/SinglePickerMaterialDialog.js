@@ -85,6 +85,7 @@ export default class SinglePickerMaterialDialog extends PureComponent {
           renderItem={this.renderItem}
           keyExtractor={this.keyExtractor}
           style={this.props.style?.list}
+          {...this.props.listProps}
         />
       </MaterialDialog>
     );
