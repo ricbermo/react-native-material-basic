@@ -23,9 +23,12 @@ export default class SinglePickerMaterialDialog extends PureComponent {
   }
 
   onPressItem(value) {
-    const {items} = this.props;
+    const {items, onSelect} = this.props;
     this.setState(() => {
       const selectedIndex = items.findIndex((item) => item.value === value);
+      if (onSelect) {
+        onSelect(items[selectedIndex]);
+      }
       return {selectedIndex};
     });
   }
@@ -124,6 +127,7 @@ SinglePickerMaterialDialog.propTypes = {
   okLabel: PropTypes.string,
   scrolled: PropTypes.bool,
   itemColor: PropTypes.string,
+  onSelect: PropTypes.func,
 };
 
 SinglePickerMaterialDialog.defaultProps = {
