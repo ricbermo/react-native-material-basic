@@ -72,6 +72,7 @@ export default class Select extends PureComponent {
     useNativeDriver: PropTypes.bool,
     numberOfLines: PropTypes.number,
     mode: PropTypes.oneOf(['filled', 'outlined', '']),
+    renderSearch: PropTypes.func,
   };
 
   static defaultProps = {
@@ -634,6 +635,7 @@ export default class Select extends PureComponent {
       accessible,
       accessibilityLabel,
       supportedOrientations,
+      renderSearch,
       ...props
     } = this.props;
 
@@ -715,6 +717,8 @@ export default class Select extends PureComponent {
             <View
               style={[styles.picker, pickerStyle, pickerStyleOverrides]}
               onStartShouldSetResponder={() => true}>
+              {renderSearch ? renderSearch() : null}
+
               <FlatList
                 ref={this.updateScrollRef}
                 data={data}

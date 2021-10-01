@@ -78,9 +78,7 @@ export default class SinglePickerMaterialDialog extends PureComponent {
           })
         }
         cancelLabel={this.props.cancelLabel}
-        onCancel={() => {
-          this.props.onCancel();
-        }}
+        onCancel={this.props.onCancel}
         style={this.props.style}>
         <FlatList
           data={this.props.items}
