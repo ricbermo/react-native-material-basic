@@ -1,6 +1,6 @@
 {
   "name": "react-native-material-basic",
-  "version": "0.0.17",
+  "version": "0.0.19",
   "description": "A Simple set of React Native components following Material Design",
   "main": "index.js",
   "repository": "https://github.com/ricbermo/react-native-material-basic",
@@ -13,8 +13,5 @@
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-native": "^0.63.2"
-  },
-  "dependencies": {
-    "react-native-typography": "^1.4.1"
   }
 }
