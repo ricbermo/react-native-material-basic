@@ -53,7 +53,7 @@ export default class TextField extends PureComponent {
     }),
     labelOffset: Label.propTypes.offset,
     labelTextStyle: Text.propTypes.style,
-    titconstextStyle: Text.propTypes.style,
+    titleTextStyle: Text.propTypes.style,
     affixTextStyle: Text.propTypes.style,
     tintColor: PropTypes.string,
     textColor: PropTypes.string,
@@ -539,7 +539,7 @@ export default class TextField extends PureComponent {
       disabled,
       baseColor,
       errorColor,
-      titconstextStyle: style,
+      titleTextStyle: style,
       characterRestriction: limit,
     } = this.props;
 
